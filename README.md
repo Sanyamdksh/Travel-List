@@ -22,3 +22,8 @@ This project was built using:
 1. **Add an Item**: Use the input field to type the name of the item you need to pack. Select the quantity, and click the `ADD` button.
 2. **Sort Items**: You can sort the items by their input order using the `SORT BY INPUT ORDER` button.
 3. **Clear the List**: If you want to start fresh, click on the `CLEAR LIST` button.
+
+
+## Live Demo 🚀
+Check out the live version of the application here:  
+[**Pack Bag Demo**](https://pack-bag.vercel.app/)
