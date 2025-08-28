@@ -12,9 +12,6 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
-  useEffect(() => {
-    localStorage.setItem("items", JSON.stringify(items));
-  }, [items]);
 
   function handleItems(item) {
     setItems((items) => [...items, item]);
