@@ -5,7 +5,18 @@ import PackingList from "./PackingList";
 import Stats from "./Stats";
 export default function App() {
   const [items, setItems] = useState([]);
+  const [items, setItems] = useState(() => {
+    const saved = localStorage.getItem("items");
+    return saved ? JSON.parse(saved) : [];
+  });
 
+  useEffect(() => {
+      localStorage.setItem("items", JSON.stringify(items));
+    }, [items]);
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
   function handleItems(item) {
     setItems((items) => [...items, item]);
   }
